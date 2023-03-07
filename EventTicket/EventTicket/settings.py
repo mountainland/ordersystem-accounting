@@ -43,12 +43,13 @@ INSTALLED_APPS = [
     "django_api_gen",
     "rest_framework",
     "rest_framework.authtoken",
-    "Tickets",
+    "Account",
     "api"
 ]
 
 API_GENERATOR = {
-    'tickets'  : "Tickets.models.Ticket",
+    'accounts'  : "Account.models.Account",
+    'transactions': "Account.models.Transaction"
 }
 
 REST_FRAMEWORK = {

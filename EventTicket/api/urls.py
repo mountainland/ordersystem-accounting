@@ -6,6 +6,7 @@ from api.views import *
 
 urlpatterns = [
 
-	re_path("tickets/((?P<pk>\d+)/)?", csrf_exempt(TicketView.as_view())),
+	re_path("accounts/((?P<pk>\d+)/)?", csrf_exempt(AccountView.as_view())),
+	re_path("transactions/((?P<pk>\d+)/)?", csrf_exempt(TransactionView.as_view())),
 
 ]

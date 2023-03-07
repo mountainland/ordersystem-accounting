@@ -1,12 +1,20 @@
 from rest_framework import serializers
 
 
-from Tickets.models import Ticket
+from Account.models import Account
+
+from Account.models import Transaction
 
 
 
-class TicketSerializer(serializers.ModelSerializer):
+class AccountSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Ticket
+        model = Account
+        fields = '__all__'
+
+
+class TransactionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Transaction
         fields = '__all__'
 
